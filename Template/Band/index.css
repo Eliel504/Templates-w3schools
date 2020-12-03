@@ -1,0 +1,565 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*HEADER desktop---------------------------*/
+
+header{
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+    box-shadow: 1px 0 5px black; 
+    
+}
+
+header .menu-desktop{
+    float: left;
+}
+
+.menu-desktop ul{
+    list-style-position: inside;
+    
+}
+
+.menu-desktop ul li{
+    float: left;
+    list-style-type: none;
+    padding: 15px 20px;
+}
+
+.menu-desktop li:hover{
+    background-color: grey;
+}
+
+.menu-desktop a{
+    text-decoration: none;
+    color: white;
+}
+
+
+header .menu-mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-image: url(./Imagens/incone-mobile.png);
+    background-position: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.menu-mobile:hover ul{
+    opacity: 1;
+}
+
+.menu-mobile ul{
+    
+    opacity: 0;
+    transition: 1s;
+    list-style-position: inside;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 63px;
+    left: 0;
+}
+
+.menu-mobile ul li{
+    list-style-type: none;
+    text-align: center;
+    padding: 15px 20px;
+    border: 1px solid rgb(83, 83, 83);
+    background-color: rgba(128, 128, 128, 0.61);
+}
+
+.menu-mobile li:hover{
+    background-color: rgba(92, 92, 92, 0.979);
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*BANNER---------------------------------------------------*/
+
+section.banner{
+    width: 100%;
+    height: 700px;
+    background-image: url(./Imagens/banda.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.banner .mensagem-banner{
+    
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 85%;
+    color: white;
+
+}
+
+.mensagem-banner h2{
+    margin-bottom: 20px;
+}
+
+/*THE BAND ---------------------------------------*/
+
+section.the-band{
+    padding: 70px 0;
+}
+
+section.the-band .container-texto{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 2%;
+}
+
+.container-texto h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.container-texto p:nth-of-type(1){
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container-texto p:nth-of-type(2){
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+div.container-image{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;  
+}
+
+.image-wraper{
+    width: 33.3%;
+    float: left;
+    padding: 0 50px;
+    text-align: center;
+}
+.image-wraper p{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+div.img{
+    width: 100%;
+    /*padding-top: 100%;*/
+    height: 150px;
+    background-image: url(./Imagens/fotografo.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 3px;
+}
+
+/*TOUR DATES---------------------------------*/
+
+section.tour-dates{
+    width: 100%;
+    padding: 70px 2%;
+    background-color: black;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container .date h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.container .date > p{
+    color: grey;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.date .date-content{
+    width: 96% ;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    background-color: white;
+    border-collapse: separate;
+
+}
+
+.date-content p{
+    text-align: left;
+    color: grey;
+}
+
+div.galeria .container-total-img{
+    width: calc(100% / 3);
+    float: left;
+    border: 15px solid black;
+}
+
+.container-total-img .img-galeria{
+    width: 100%;
+    height: 200px;
+    background-image: url(./Imagens/newyork.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+
+}
+
+.container-total-img .informacoes-img{
+    width: 100%;   
+    background-color: white;
+    padding: 15px;
+}
+
+.informacoes-img h2{
+    font-size: 15px;
+    margin-bottom: 12px;    
+}
+
+.informacoes-img p:nth-of-type(1){
+    font-style: italic;
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 12px;
+}
+
+
+.informacoes-img p:nth-of-type(2){
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.informacoes-img input[type ='submit']{
+    margin-top: 12px;
+    padding: 9px 15px;
+    color: white;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+
+/*CONTACT---------------------------------------------*/
+
+section.contact{
+    width: 100%;
+    padding: 70px 2%;
+    
+}
+
+section.contact > h1{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section.contact > p{
+    text-align: center;
+    color: grey;
+}
+
+
+div.container-contato{
+    max-width: 700px;
+    margin: 30px auto;
+    display: flex;
+    
+}
+
+div.container-endereco{
+    width: 50%;
+    height: 100%;
+}
+
+div.container-form{
+    width: 50%;
+    height: 100%;
+    
+    
+}
+
+form .t50{
+    width: 47%;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 10px;
+    
+}
+
+form .t100{
+    width: calc(100% - 10px);
+    line-height: 30px;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 10px;
+    
+}
+
+.container-form input[type = 'submit']{
+    float: right;
+    margin-top: 12px;
+    padding: 9px 15px;
+    color: white;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+}
+
+div.wraper-endereco{
+    width: 100%;    
+}
+
+.wraper-endereco .img-contato{
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    background-position: center;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.wraper-endereco > p{
+    float: left;
+}
+
+
+/*MAP----------------------------------*/
+
+section.map{
+    width: 100%;
+    height: 700px;
+    background-image: url(./Imagens/map.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*FOOTER------------------------*/
+footer{
+    text-align: center;
+    padding: 20px 2%
+}
+
+div.red_social{
+    width: 120px;
+    height: 20px;
+    background-image: url(./Imagens/rede-social.png);
+    background-size: 100% 100%;
+    background-position:center ;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 760px){
+    
+    header{
+        width: 100%;
+        background-color: black;
+        z-index: 999;
+        box-shadow: 1px 0 5px black; 
+        padding: 10px 20px;
+    }
+    .menu-desktop{
+        display: none;
+    }
+
+    header .menu-mobile{
+        display: inline-block;
+
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 720px){
+    div.container-image{
+        width: 90%;
+        max-width: none;
+        margin: 0 auto;
+        padding-top: 50px;  
+    }
+    
+    .image-wraper{
+        width: 100%;
+        float: none;
+        padding: 50px 2%;
+        text-align: center;
+    }
+    .image-wraper p{
+        font-weight: 400;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    
+    div.img{
+        width: 100%;
+        padding-top: 100%;
+        background-image: url(./Imagens/fotografo.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        border-radius: 3px;
+    }
+
+    section.contact{
+        width: 100%;
+        padding: 70px 2%;
+        
+    }
+    
+    section.contact > h1{
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    section.contact > p{
+        text-align: center;
+        color: grey;
+    }
+    
+    
+    div.container-contato{
+        max-width: 700px;
+        margin: 30px auto;
+        display: block;
+        flex-direction: column;
+        
+    }
+    
+    div.container-endereco{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    div.container-form{
+        width: 100%;
+        height: 100%;
+ 
+    }
+    
+    form .t50{
+        width: 100%;
+        float: block;
+        line-height: 30px;
+        margin-right: 0;
+        outline: none;
+        border: 1px solid grey;
+        padding-left: 10px;
+    }
+
+    form .t50:nth-of-type(1){
+        margin-bottom: 10px;
+    }
+    
+    form .t100{
+        width: 100%;
+        line-height: 30px;
+        margin-top: 10px;
+        outline: none;
+        border: 1px solid grey;
+        padding-left: 10px;
+        
+    }
+    
+    .container-form input[type = 'submit']{
+        float: none;
+        margin: 30px auto;
+        padding: 9px 15px;
+        color: white;
+        background-color: black;
+        border: 0;
+        cursor: pointer;
+        position: none;
+        display: block;
+        
+    }
+    
+    div.wraper-endereco{
+        width: 100%;
+        text-align: center;
+        margin-bottom:  20px;
+    }
+    
+    .wraper-endereco .img-contato{
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        background-size: 100% 100%;
+        background-position: center;
+        float: none;
+        margin-bottom: 10px;
+    }
+    
+    .wraper-endereco > p{
+        float: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 650px){
+    .container{
+        max-width: none;
+        margin: 0 auto;
+    }
+    
+    div.galeria .container-total-img{
+        width: 100%;
+        float: none;
+        border: 15px solid black;
+        margin: 0 auto;
+    }
+    
+    .container-total-img .img-galeria{
+        width: 100%;
+        padding-top: 100%;
+        background-image: url(./Imagens/newyork.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-top: 30px;
+    
+    }
+    
+    .container-total-img .informacoes-img{
+        width: 100%;   
+        background-color: white;
+        padding: 15px;
+        text-align: center;
+    }
+}
