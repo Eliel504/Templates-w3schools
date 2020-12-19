@@ -413,3 +413,123 @@ section.box-my-photos{
 }
 
 
+
+/*CONTACT*/
+
+section.contact{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact h1{
+    width: 20%;
+    color: #fff;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #757575;
+    margin-bottom: 23px;
+    font-weight: 500;
+    font-size: 33px;
+}
+
+.box-contact-information{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wraper-contact{
+   width: 100%; 
+   margin-bottom: 40px;
+}
+
+.img-contact{
+    width: 40px;
+    height: 40px;
+    background-image: url(../icons/localização.png);
+    background-position: center;
+    background-size: 100% 100%;
+    float: left;
+    margin-right: 15px;
+}
+
+.wraper-contact p{
+    color: grey;
+    position: relative;
+    top: 10px;
+}
+
+.form-contact{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form-contact p{
+    color: grey;
+    margin-bottom: 17px;
+}
+
+.form-contact form > input{
+    width: 100%;
+    line-height: 53px;
+    border: 0;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    font-size: 15px;
+}
+
+.form-contact > input{
+    width: 200px;
+    height: 43px;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+footer{
+    width: 100%;
+    padding: 100px 0;
+
+}
+
+.social-networks{
+    width: 200px;
+    margin-bottom: 35px;
+
+}
+
+.img-social{
+    background-image: url(../icons/facebook.png);
+    background-position: center;
+    background-size: 100% 100%;
+    width: calc(120px / 6);
+    height: calc(120px / 6);
+    float: left;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+.image-cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+.image-cover:hover{
+    opacity: 0.6;
+}
+
+footer p{
+    color: grey;
+}
+
+footer a{
+    color: grey;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: green;
+    
+}
