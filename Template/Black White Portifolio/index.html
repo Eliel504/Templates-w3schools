@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Template/Black White Portifolio/style/main.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="box-banner"> </section><!--box-banner-->
+
+    <main>
+            <nav>
+                <div  id='entrar-menu'  class="box-menu"  onclick="clicar_entrar_menu()"> 
+                    <div class="menu"></div><!--menu-->
+                </div><!--box-menu-->
+                <ul id="menu">
+                    <div id="sair-menu" class="box-sair-menu" onclick="clicar_sair_menu()">
+                        <div class="sair-menu"></div>
+                    </div><!--box-sair-menu-->
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Portifolio</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <section class="box-profile">
+                <div class="profile">
+                    <h1>Jane Doe</h1>
+                    <p>Photographer and Web Designer.</p>
+                    <div class="download-button">
+                        <div class="img-download"></div>
+                        <span>Download Resume</span>
+                    </div><!--download-button-->
+                </div><!--profile-->
+            </section><!--box-profile-->
+
+            <section class="box-portifolio">
+                <div class="center">
+                    <h1>My Portfolio</h1>
+                    <div class="line"></div>
+                    
+                    <div class="left-portifolio">
+
+                    </div><!--left-portifolio-->
+
+                    <div class="rigth">
+
+                    </div><!--rigth-portifolio-->
+                
+                </div><!--center-->
+            </section>
+        
+    </main>
+
+
+
+
+<script>
+    let sair_menu = document.getElementById('sair-menu')
+    let menu = document.getElementById('menu')
+    let entrar_menu = document.getElementById('entrar-menu')
+
+    function clicar_entrar_menu(){
+        menu.style.display='inline'
+    }
+
+    function clicar_sair_menu(){
+        menu.style.display='none'
+    }
+</script>
+</body>
+</html>
