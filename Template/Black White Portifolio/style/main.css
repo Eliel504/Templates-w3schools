@@ -19,7 +19,10 @@
 
 html, body{
     height: 100%;
+    font-size: 15px;
 }
+
+
 
 .clear{
     clear: both;
@@ -28,13 +31,27 @@ html, body{
 .center{
     margin: 0 auto;
     width: 100%;
-    padding: 0 4%;
+    padding: 0 3%;
 }
 
 main{
     float: right;
     width: 60%;
     background-color: var(--write-color); 
+}
+
+.style-h1{
+    color: var(--third-grey-color);
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.line{
+    width: 100%;
+    border-bottom: 1px solid var(--fourth-grey-color);
+    margin-bottom: 18px;
 }
 
 /*BANNER-----------------------------*/
@@ -127,40 +144,43 @@ nav ul li a{
 /*PROFILE-------------------------*/
 
 section.box-profile{
-     height: 520px;
+     height: 532px;
      text-align: center;
 }
 
 .profile{
     position: relative;
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     display: inline-block;
+
 }
 
 .profile > h1{
     font-size: 65px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .profile p{
     font-size: 15px;
-    margin-bottom: 30px;
 }
 
-.profile .download-button{
+div.download-button{
     background-color: var(--fourth-grey-color);
     width: 220px;
-    margin: 0 auto;
+    display: inline-block;
     line-height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
-    
 }
 
-.profile .download-button:hover{
+div.content-button{
+       display: flex; 
+       align-items: center;
+       justify-content: center;
+}
+
+div.download-button:hover{
     background-color: var(--primary-grey-color);
     
 }
@@ -180,16 +200,192 @@ section.box-portifolio{
     width: 100%;
 }
 
-.box-portifolio h1{
-    color: var(--third-grey-color);
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 2px;
+
+.flex-portifolio{
+    width: 100%;
+    display: flex;
 }
 
-.line{
-    width: 100%;
-    border-bottom: 1px solid var(--fourth-grey-color);
-    margin-top: 35px;
+.w50{
+    width: 49%;
 }
+
+.box-img-left{
+    margin-right: 17px;
+}
+
+.img-portifolio{
+    width: 100%;   
+    margin-bottom: 12px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.box-img-left .img-portifolio:nth-of-type(1){
+    height: 220px;
+    background-image: url(../images/wedding.jpg);
+}
+
+.box-img-left .img-portifolio:nth-of-type(2){
+    height: 620px;
+    background-image: url(../images/wedding.jpg);
+}
+
+.box-img-left .img-portifolio:nth-of-type(3){
+    height: 220px;
+    background-image: url(../images/wedding.jpg);
+}
+
+
+.box-img-rigth .img-portifolio:nth-of-type(1){
+    height: 350px;
+    background-image: url(../images/wedding.jpg);
+}
+
+.box-img-rigth .img-portifolio:nth-of-type(2){
+    height: 239px;
+    background-image: url(../images/wedding.jpg);
+}
+
+.box-img-rigth .img-portifolio:nth-of-type(3){
+    height: 239px;
+    background-image: url(../images/wedding.jpg);
+}
+
+.box-img-rigth .img-portifolio:nth-of-type(4){
+    height: 250px;
+    background-image: url(../images/wedding.jpg);
+}
+
+/*ABOUT--------------------------*/
+
+section.about{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+
+.about p{
+    color: var(--third-grey-color);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*SKILLS----------------------*/
+
+section.box-skills{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+div.wraper-statistic{
+    padding: 10px 0;
+}
+
+.wraper-statistic p{
+    color: var(--third-grey-color);
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+
+}
+
+div.bar{
+    width: 100%;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+
+div.bar-content{
+    background-color: var(--secondary-grey-color);
+    color: var(--write-color);
+    text-align: center;
+}
+
+div.w95{
+    width: 95%;
+}
+
+div.w85{
+    width: 85%;
+}
+
+div.w80{
+    width: 80%;
+}
+
+div.flex-statistic-values{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding: 30px 0;
+    background-color: var(--secondary-grey-color);
+    display: flex;
+}
+
+div.content-value{
+    width: calc(100% / 4);
+    text-align: center;
+    color: var(--write-color);
+}
+
+.content-value p:nth-of-type(1){
+    font-size: 24px;
+}
+
+div.download-button{
+    margin: 35px 0;
+}
+
+/*INFORMATION---------------------------------*/
+
+div.flex-box-information{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+
+}
+
+div.information-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 13px;
+}
+
+div.information-img div:nth-of-type(1){
+    
+}
+
+div.information-img div:nth-of-type(2){
+    background-image: url(../images/bandmember.jpg);
+}
+
+div.information-img div:nth-of-type(3){
+    background-image: url(../images/avatar_g2.jpg);    
+}
+
+.information-one{
+    margin-bottom: 20px;
+}
+
+.content-information p{
+    color: var(--third-grey-color);    
+}
+
+.information-one span:nth-of-type(1){
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.information-one span:nth-of-type(2){
+    color: var(--third-grey-color);
+}
+
+/*PRICE--------------------------*/
 
