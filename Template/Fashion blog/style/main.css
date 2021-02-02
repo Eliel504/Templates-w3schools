@@ -54,6 +54,14 @@ h1, h2, h3, h4, h5, h6{
     color: var(--grey-color5);
     font-family: 'Oswald', sans-serif;
 }
+
+.title-rigth{
+    color: white;
+    font-size: 25px;
+    padding: 17px 15px;
+    font-weight: 400;
+    background-color: black;
+}
 /*HEADER----------------------------------*/
 
 header{
@@ -279,7 +287,6 @@ main .center{
 
 .right-main{
     width: 34%;
-    border: 1px solid green;
     margin: 0 0 0 14px;
 }
 
@@ -399,4 +406,153 @@ section.box-heading{
 
 .title-replies span{
    color: var(--black-color); 
+}
+
+/*DESCRIPTION-------------------------------*/
+
+.box-description{
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+.img-description{
+    width: 100%;
+    height: 280px;
+    background-image: url('../images/avatar_girl2.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    filter: grayscale(75%);
+}
+
+.msg-description{
+    padding: 13px 16px;
+    background-color: black;
+    color: white;
+}
+
+.msg-description h1{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.msg-description p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/*POSTS------------------------------*/
+
+.box-posts{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: var(--white-color);
+}
+
+.content-posts{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid var(--grey-color2);
+
+}
+
+.content-posts:hover{
+    background-color: var(--grey-color2);
+}
+
+.img-posts{
+    width: 60px;
+    height: 70px;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 15px;
+}
+
+.msg-posts p{
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.msg-posts p:nth-last-of-type(2){
+    font-size: 21px;
+}
+
+
+/*ADVERTISE ------------------------*/
+
+.box-advertise{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: var(--white-color);
+}
+
+.content-advertise{
+    padding: 15px;
+}
+
+.wraper-advertise{
+    width: 100%;
+    height: 270px;
+    background-color: var(--grey-color1);
+    text-align: center;
+}
+
+.wraper-advertise p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*TAGS-------------------------------------*/
+
+.box-tags{
+    width: 100%;
+    background-color: var(--white-color);
+    margin-bottom: 50px;
+}
+
+.content-tags{
+    padding: 18px 15px;
+}
+
+.box-tags span.primary-span{
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 5px 13px;
+    font-size: 17px;
+}
+
+.box-tags p{
+    padding: 3px 10px;
+    background-color: var(--grey-color1);
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/*INSPIRATION---------------------------------*/
+
+.box-inspiration{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: var(--white-color);
+}
+
+.content-inspiration{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 20px;
+   padding: 20px;
+    
+}
+
+.img-inspiration{
+    width: 100%;
+    height: 160px;
+    background-position: center;
+    background-size: 100% 100%;
 }
